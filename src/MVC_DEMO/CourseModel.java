@@ -5,7 +5,11 @@ public class CourseModel {
     private int courseID;
     private String courseCategory;
 
-    public CourseModel(String c_Name, int c_ID, String c_Category){
+    public CourseModel() {
+
+    }
+
+    public CourseModel(String c_Name, int c_ID, String c_Category) {
         super();
         courseName = c_Name;
         courseID = c_ID;
@@ -16,24 +20,24 @@ public class CourseModel {
         return courseName;
     }
 
-    public String setCourseName(String courseName) {
-        return courseName;
+    public String setCourseName(String c_name) {
+        // System.out.println(courseName);
+        return courseName = c_name;
     }
 
-    public int getCourseID(){
+    public int getCourseID() {
         return courseID;
     }
 
-    public void setCourseID(int cID){
+    public void setCourseID(int cID) {
         courseID = cID;
     }
 
-    public String getCourseCategory(){
-            return courseCategory;
+    public String getCourseCategory() {
+        return courseCategory;
     }
 
-    public String setCourseCategory(String C_Category){
+    public String setCourseCategory(String C_Category) {
         return courseCategory = C_Category;
     }
-
 }
