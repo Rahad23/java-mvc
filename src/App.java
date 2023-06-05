@@ -8,6 +8,8 @@ public class App {
         CourseModel cModel = retriveDataFromDatabase();
         Course_view cview = new Course_view();
         Course_contoller cController = new Course_contoller(cModel, cview);
+        cController.setCourseN_("Java");
+
         cController.update_view();
     }
 
